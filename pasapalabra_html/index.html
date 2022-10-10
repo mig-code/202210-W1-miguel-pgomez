@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+
+<body>
+    <main class="main-game">
+        <section class="main-game__circle">
+            <div class="circle">
+               
+            </div>
+
+        </section>
+
+        <section class="main-game__questions">
+            <div class="questions">
+                <div class="questions__time">
+                    <div class="questions__time--circle"> 240
+                        
+                    </div> 
+                </div>
+                <h1 class="questions__title"> CON LA A. Dicho de una supuesta criatura extraterrestre: Apoderarse de alguien</h1>
+                <input type="text" class="questions__input" placeholder="Introduce tu respuesta" autofocus>
+                <div class="questions__buttons-container">
+                    <button class="questions__button" id="insert-word">RESPONDER</button>
+                    <button class="questions__button questions__button--next" id="next-word">PASAPALABRA</button>
+                </div>
+                <div class="questions__show-answer"></div>
+                <div class="questions__name"></div>
+                
+            </div>
+            <div class="new-game">
+                <h1 class="new-game__title">
+                    Bienvenido al juego de pasapalabra
+                </h1>
+                <h2 class="new-game__subtitle">
+                    Tendrás 240 segundos para responder todas las preguntas
+                </br>
+                </br>
+                    Por favor, introduce tu nombre para comenzar:
+                    
+                </h2>
+                <input type="text" class="new-game__input" placeholder="Introduce tu nombre" autofocus>
+                   
+                
+                <button class="new-game__button" id="start-button">NUEVA PARTIDA</button>
+                
+            </div> 
+            <div class="end-game">
+                <h1 class="end-game__title">
+                    
+                </h1>
+                <h2 class="end-game__subtitle">
+                    
+                </br>
+                </br>
+                    
+                    
+                </h2>
+                <div class="end-game__ranking">
+                    RANKING
+                </div>
+                <button class="end-game__button" id="repeat-button">NUEVA PARTIDA</button>
+                
+            </div> 
+              
+          
+
+        </section>
+    </main>
+    <div class="buttons-container">
+        <button class="questions__button questions__button--small" id="end-game">TERMINAR</button>
+       
+    </div>
+   
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

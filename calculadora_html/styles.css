@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root {
+    --ff-primary: 'Dosis', sans-serif;
+    --ff-secondary: "Source Code Pro", monospace;
+
+    --fw-reg: 400;
+    --fw-bold: 600 --clr-light: #fff;
+    --clr-accent-light: #f9f5e3;
+    --clr-dark: #2f2c2c;
+    --clr-accent-dark: #090909;
+    --clr-accent: #1e256b;
+    --clr-dark_blue: #0d1032;
+    --clr-red: #e2294f;
+    --clr-glow: #104bee;
+    
+    --fs-h1: 2rem;
+    --fs-h2: 3rem;
+    --fs-body: 2.2rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+/* Global Styles */
+
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-primary);
+
+}
+
+button {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+}
+
+/* Calculator Styles */
+
+.calculator {
+    margin: 5em 1em;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 600px;
+    align-items: center;
+    border-radius: 15px;
+    border: solid 3px var(--clr-dark_blue);
+
+}
+
+.calculator__display {
+    width: 90%;
+    min-height: 2.3em;
+    font-size: var(--fs-body);
+    background-color: var(--clr-dark_blue);
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    box-shadow: var(--bs);
+    text-align: right;
+    color: #fff;
+    text-shadow:
+        0 0 12px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow);
+
+}
+
+.calculator__string {
+    width: 90%;
+    min-height: 1.3em;
+    font-size: 1em;
+    background-color: var(--clr-dark_blue);
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    box-shadow: var(--bs);
+    text-align: right;
+    color: #fff;
+    text-shadow:
+        0 0 12px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow);
+
+}
+
+.calculator__buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 0.5em;
+
+}
+
+.calculator__btn {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
+    background-color: var(--clr-accent-dark);
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    background-color: var(--clr-dark);
+
+    box-shadow: var(--bs);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.calculator__btn--two-col {
+    grid-column: span 2;
+}
+
+.calculator__btn--number {
+    background-color: var(--clr-accent);
+    color: #fff;
+    text-shadow:
+        0 0 12px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow),
+        0 0 8px var(--clr-glow);
+}
+
+.calculator__btn--number:hover {
+    background-color: var(--clr-accent);
+    color: #fff;
+    text-shadow:
+        0 0 12px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 12px var(--clr-red),
+        0 0 12px var(--clr-red),
+        0 0 12px var(--clr-red),
+        0 0 12px var(--clr-red),
+        0 0 12px var(--clr-red);
+
+}
+
+.neon-box {
+    color: #fff;
+    box-shadow:
+
+        0 0 8px #fff,
+        0 0 4px #fff,
+        0 0 4px #fff,
+        0 0 4px var(--clr-glow),
+        0 0 4px var(--clr-glow),
+        0 0 4px var(--clr-glow),
+        0 0 2px var(--clr-glow),
+        0 0 10px var(--clr-glow)
+}
+
+.calculator__btn--operator {
+    background-color: var(--clr-accent-light);
+    color: var(--clr-dark);
+    font-weight: bold;
+
+
+}
+
+.calculator__btn--operator:hover {
+
+    color: var(--clr-accent-light);
+    background-color: var(--clr-dark);
+}
+
+
+.active {
+    background-color: var(--clr-red);
+    color: var(--clr-accent-light);
+}
+
+
