@@ -1,4 +1,18 @@
-body{
+body {
     margin: 0 auto;
     max-width: 900px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #ccc;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
 }
